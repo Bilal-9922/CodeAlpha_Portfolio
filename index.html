@@ -2,266 +2,265 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilal Shaikh Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body{
+*{
  margin:0;
- font-family:Arial;
- scroll-behavior:smooth;
- background:#f5f6fa;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Poppins',sans-serif;
 }
 
-/* HEADER */
-header{
- background:linear-gradient(135deg,#1e90ff,#3742fa);
+body{
+ background:#0f172a;
  color:white;
- padding:30px;
- text-align:center;
- animation:slideDown 1s ease;
 }
 
-@keyframes slideDown{
- from{transform:translateY(-100px); opacity:0;}
- to{transform:translateY(0); opacity:1;}
+/* NAVBAR */
+nav{
+ display:flex;
+ justify-content:space-between;
+ padding:20px 50px;
+ background:#020617;
+ position:sticky;
+ top:0;
+}
+
+nav h2{
+ color:#22c55e;
 }
 
 nav a{
  color:white;
- margin:0 15px;
+ margin-left:20px;
  text-decoration:none;
- font-weight:bold;
+ transition:0.3s;
 }
 
+nav a:hover{
+ color:#22c55e;
+}
+
+/* HERO */
+.hero{
+ height:90vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ flex-direction:column;
+}
+
+.hero h1{
+ font-size:50px;
+}
+
+.hero span{
+ color:#22c55e;
+}
+
+.hero p{
+ margin:15px 0;
+}
+
+.btn{
+ padding:10px 20px;
+ background:#22c55e;
+ color:black;
+ border:none;
+ border-radius:5px;
+ cursor:pointer;
+}
+
+/* SECTION */
 section{
- padding:70px;
+ padding:80px 50px;
 }
 
 /* ABOUT */
-#about{
+.about{
  display:flex;
- align-items:center;
  gap:40px;
+ align-items:center;
+ flex-wrap:wrap;
 }
 
-#about img{
+.about img{
  width:200px;
  border-radius:50%;
- box-shadow:0 10px 20px rgba(0,0,0,0.3);
- animation:zoomIn 1.2s;
 }
 
-@keyframes zoomIn{
- from{transform:scale(0); opacity:0;}
- to{transform:scale(1); opacity:1;}
-}
-
-/* PROJECTS */
-#projects{
- background:#dfe4ea;
-}
-
-.project-grid{
+/* SKILLS */
+.skills{
  display:grid;
- grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
  gap:20px;
 }
 
-.project{
- background:white;
+.skill{
+ background:#1e293b;
  padding:20px;
+ text-align:center;
  border-radius:10px;
- box-shadow:0 8px 20px rgba(0,0,0,0.2);
- transition:0.4s;
 }
 
-.project:hover{
- transform:translateY(-10px);
-}
-
-/* CERTIFICATIONS */
-#certifications{
- background:#f1f2f6;
-}
-
-.cert-grid{
+/* PROJECTS */
+.projects{
  display:grid;
- grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
  gap:25px;
 }
 
-.cert-card{
- background:white;
+.card{
+ background:#1e293b;
  padding:20px;
  border-radius:10px;
- box-shadow:0 8px 20px rgba(0,0,0,0.2);
- transition:0.4s;
- text-align:center;
+ transition:0.3s;
 }
 
-.cert-card:hover{
+.card:hover{
  transform:translateY(-10px);
 }
 
-.cert-card img{
- width:100%;
- border-radius:8px;
-}
-
-.cert-card a{
- display:inline-block;
- margin-top:10px;
- text-decoration:none;
- background:#1e90ff;
- color:white;
- padding:8px 15px;
- border-radius:5px;
-}
-
 /* CONTACT */
-#contact{
- background:#ced6e0;
+.contact{
  text-align:center;
+}
+
+footer{
+ text-align:center;
+ padding:20px;
+ background:#020617;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+ nav{
+  flex-direction:column;
+ }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Hi, I'm Mohammad Bilal Shaikh</h1>
-<p>Frontend Web Developer</p>
+<!-- NAVBAR -->
 <nav>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<section id="about">
-<img src="B.png" alt="My Profile">
+<h2>Bilal</h2>
 <div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<h1>Hi, I'm <span>Bilal Shaikh</span></h1>
+<p>Frontend Developer | ML Enthusiast</p>
+<button class="btn">Download Resume</button>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
 <h2>About Me</h2>
+<div class="about">
+<img src="your-image.jpg">
 <p>
-I am a Third Year Computer Engineering student | SQL, Python, C++ & Web Development |
-Software Engineering & Problem Solving.
-Passionate frontend developer skilled in HTML, CSS, JavaScript and UI design.
+I am a Third Year Computer Engineering student passionate about web development and machine learning. 
+I build responsive websites and intelligent ML applications.
 </p>
 </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">SQL</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects">
-<h2>🔥 Projects</h2>
+<h2>Projects</h2>
 
-<div class="project-grid">
+<div class="projects">
 
-<div class="project">
-<h3>📊 Student Performance ML</h3>
-<p>Machine Learning model to predict student pass/fail based on academic data.</p>
-<ul>
-<li>Used classification algorithm</li>
-<li>Streamlit web interface</li>
-<li>Confidence score + risk analysis</li>
-</ul>
-</div>
-
-<div class="project">
-<h3>🧮 Calculator App</h3>
-<p>Animated calculator built using HTML, CSS, and JavaScript.</p>
-<ul>
-<li>Basic arithmetic operations</li>
-<li>Smooth UI animations</li>
-<li>Error handling</li>
-</ul>
-</div>
-
-<div class="project">
-<h3>🌐 Portfolio Website</h3>
-<p>Responsive personal portfolio with animations and sections.</p>
-<ul>
-<li>Smooth scrolling navigation</li>
-<li>Modern UI design</li>
-<li>Projects & certifications showcase</li>
-</ul>
-</div>
-
-<div class="project">
-<h3>📧 Spam Email Classifier</h3>
-<p>ML model that detects spam emails using text processing.</p>
-<ul>
-<li>NLP techniques (TF-IDF)</li>
-<li>Classification model</li>
-<li>High accuracy prediction</li>
-</ul>
-</div>
-
-<div class="project">
-<h3>🎬 Movie Recommendation System</h3>
-<p>Recommends movies based on user preferences.</p>
-<ul>
-<li>Content-based filtering</li>
-<li>Cosine similarity</li>
-<li>Interactive recommendation system</li>
-</ul>
-</div>
-
-<div class="project">
-<h3>🎓 Student Performance Prediction</h3>
-<p>Predicts student results using academic and behavioral data.</p>
-<ul>
-<li>Machine learning model</li>
-<li>Performance analysis dashboard</li>
-<li>Study plan suggestions</li>
-</ul>
-</div>
-
-<div class="project">
-<h3>💼 Salary Predictor</h3>
-<p>Predicts salary based on experience and skills.</p>
-<ul>
-<li>Regression model</li>
-<li>Data preprocessing & visualization</li>
-<li>Real-time prediction interface</li>
-</ul>
-</div>
-
-</div>
-</section>
-</div>
-</section>
-
-
-<section id="certifications">
-<h2>Certifications</h2>
-
-<div class="cert-grid">
-
-<div class="cert-card">
-<img src="cert1.jpg" alt="Certificate">
-<h3>HTML5 and CSS3 Complete Course Build Websites</h3>
-
-</div>
-
-<div class="cert-card">
-<img src="cert2.jpg" alt="Certificate">
-<h3>MySQL for Beginners</h3>
-
-</div>
-
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact Me</h2>
-<p>Email: bilalshaikh1339@gmail.com</p>
-<p>GitHub: <a href="https://github.com/Bilal-9922" target="_blank">Bilal-9922</a></p>
-<p>LinkedIn: 
-<a href="https://www.linkedin.com/in/mohammad-bilal-shaikh-2a73b3327" target="_blank">
-View Profile
-</a>
+<div class="card">
+<h3>Student Performance ML</h3>
+<p>Predict student results using ML and Streamlit.</p>
+<p>
+<a href="https://github.com/Bilal-9922/student-performance-ml.git" target="_blank">GitHub</a>
 </p>
+</div>
+
+<div class="card">
+<h3>Spam Email Classifier</h3>
+<p>Detect spam emails using NLP and ML.</p>
+<p>
+<a href="https://github.com/Bilal-9922/codectechnologies_Spam-Email-Classifier.git" target="_blank">GitHub</a>
+</p>
+</div>
+
+<div class="card">
+<h3>Movie Recommendation System</h3>
+<p>Recommend movies using cosine similarity.</p>
+<p>
+<a href="https://github.com/Bilal-9922/codectechnologies_Movie-Recommendation-System.git" target="_blank">GitHub</a>
+</p>
+</div>
+
+<div class="card">
+<h3>Salary Predictor</h3>
+<p>Predict salary using regression model.</p>
+<p>
+<a href="https://github.com/Bilal-9922/Salary_Predictor.git" target="_blank">GitHub</a>
+</p>
+</div>
+
+<div class="card">
+<h3>Calculator App</h3>
+<p>Interactive calculator using JS.</p>
+<p>
+<a href="https://github.com/Bilal-9922/CodeAllpha_Calculator.git" target="_blank">GitHub</a>
+</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Responsive personal portfolio site.</p>
+<p>
+<a href="YOUR_GITHUB_LINK" target="_blank">GitHub</a>
+</p>
+</div>
+
+</div>
 </section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<p>Email: bilalshaikh1339@gmail.com</p>
+<p>GitHub: Bilal-9922</p>
+<p>LinkedIn: bilal-shaikh</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Bilal Shaikh</p>
+</footer>
 
 </body>
 </html>
