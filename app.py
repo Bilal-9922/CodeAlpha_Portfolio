@@ -106,10 +106,13 @@ button[kind="primary"] {
 </style>
 """, unsafe_allow_html=True)
 # ---------- HERO ----------
-st.markdown("<h1>🚀 Mohammad Bilal Shaikh</h1>", unsafe_allow_html=True)
-st.write("Frontend Developer | Machine Learning Enthusiast")
-
-st.write("---")
+st.markdown("""
+<h1>🚀 Mohammad Bilal Shaikh</h1>
+<p style='text-align:center; font-size:18px;'>
+Frontend Developer | Machine Learning Enthusiast
+</p>
+<hr>
+""", unsafe_allow_html=True)
 
 # ---------- ABOUT ----------
 st.header("👨‍💻 About Me")
@@ -129,11 +132,13 @@ st.header("🔥 Projects")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-    st.subheader("📊 Student Performance Prediction")
-    st.write("Predicts student pass/fail using ML model with Streamlit UI.")
-    st.write("Tech: Python, ML, Streamlit")
-    st.markdown('</div>', unsafe_allow_html=True)
+st.markdown("""
+<div class="card">
+<h3>📊 Student Performance Prediction</h3>
+<p>Predicts student pass/fail using ML model with Streamlit UI.</p>
+<p><b>Tech:</b> Python, ML, Streamlit</p>
+</div>
+""", unsafe_allow_html=True)
 
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.subheader("📧 Spam Email Classifier")
