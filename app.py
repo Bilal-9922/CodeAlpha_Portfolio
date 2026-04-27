@@ -230,4 +230,3 @@ st.write("💻 GitHub: https://github.com/Bilal-9922")
 st.write("🔗 LinkedIn: https://www.linkedin.com/in/mohammad-bilal-shaikh-2a73b3327")
 
 st.write("---")
-st.write("⭐ Built with Streamlit")
