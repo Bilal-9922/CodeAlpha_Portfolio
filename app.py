@@ -132,45 +132,81 @@ st.header("🔥 Projects")
 col1, col2 = st.columns(2)
 
 with col1:
+
     st.markdown("""
     <div class="card">
     <h3>📊 Student Performance Prediction</h3>
-    <p>Predicts student pass/fail using ML model with Streamlit UI.</p>
-    <p><b>Tech:</b> Python, ML, Streamlit</p>
+    <p>Machine learning model that predicts student performance based on academic data.</p>
+    <p><b>Features:</b> Prediction, risk analysis, study plan</p>
+    <p><b>Tech:</b> Python, Scikit-learn, Streamlit</p>
     </div>
     """, unsafe_allow_html=True)
 
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-    st.subheader("📧 Spam Email Classifier")
-    st.write("Detects spam emails using NLP techniques.")
-    st.write("Tech: Python, TF-IDF, ML")
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card">
+    <h3>📧 Spam Email Classifier</h3>
+    <p>Detects whether an email is spam or not using NLP techniques.</p>
+    <p><b>Features:</b> Text preprocessing, TF-IDF, classification</p>
+    <p><b>Tech:</b> Python, NLP, Machine Learning</p>
+    </div>
+    """, unsafe_allow_html=True)
 
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-    st.subheader("🎬 Movie Recommendation System")
-    st.write("Recommends movies using similarity algorithms.")
-    st.write("Tech: Python, Cosine Similarity")
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card">
+    <h3>🎬 Movie Recommendation System</h3>
+    <p>Recommends movies based on user preferences and similarity.</p>
+    <p><b>Features:</b> Content-based filtering, cosine similarity</p>
+    <p><b>Tech:</b> Python, Pandas, ML</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="card">
+    <h3>🌐 Portfolio Website</h3>
+    <p>Responsive personal portfolio with modern UI and animations.</p>
+    <p><b>Features:</b> Sections, smooth navigation, animations</p>
+    <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+    </div>
+    """, unsafe_allow_html=True)
+
 
 with col2:
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-    st.subheader("💼 Salary Predictor")
-    st.write("Predicts salary based on experience using regression.")
-    st.write("Tech: Python, ML")
-    st.markdown('</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-    st.subheader("🧮 Calculator App")
-    st.write("Animated calculator using HTML, CSS, JS.")
-    st.write("Tech: HTML, CSS, JS")
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card">
+    <h3>💼 Salary Predictor</h3>
+    <p>Predicts salary based on experience using regression models.</p>
+    <p><b>Features:</b> Data analysis, real-time prediction</p>
+    <p><b>Tech:</b> Python, Machine Learning</p>
+    </div>
+    """, unsafe_allow_html=True)
 
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-    st.subheader("🌐 Portfolio Website")
-    st.write("Responsive personal portfolio website.")
-    st.write("Tech: HTML, CSS")
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card">
+    <h3>🧮 Calculator App</h3>
+    <p>Animated calculator with interactive UI.</p>
+    <p><b>Features:</b> Arithmetic operations, animations</p>
+    <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+    </div>
+    """, unsafe_allow_html=True)
 
+    st.markdown("""
+    <div class="card">
+    <h3>📊 Student Dashboard</h3>
+    <p>Visualization dashboard showing student performance analytics.</p>
+    <p><b>Features:</b> Charts, insights, analytics</p>
+    <p><b>Tech:</b> Python, Pandas, Matplotlib</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div class="card">
+    <h3>🤖 AI Chatbot (Basic)</h3>
+    <p>Simple chatbot for answering basic user queries.</p>
+    <p><b>Features:</b> Rule-based responses</p>
+    <p><b>Tech:</b> Python</p>
+    </div>
+    """, unsafe_allow_html=True)
 # ---------- SKILLS ----------
 st.header("🧠 Skills")
 
