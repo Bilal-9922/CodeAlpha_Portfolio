@@ -132,13 +132,13 @@ st.header("🔥 Projects")
 col1, col2 = st.columns(2)
 
 with col1:
-st.markdown("""
-<div class="card">
-<h3>📊 Student Performance Prediction</h3>
-<p>Predicts student pass/fail using ML model with Streamlit UI.</p>
-<p><b>Tech:</b> Python, ML, Streamlit</p>
-</div>
-""", unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card">
+    <h3>📊 Student Performance Prediction</h3>
+    <p>Predicts student pass/fail using ML model with Streamlit UI.</p>
+    <p><b>Tech:</b> Python, ML, Streamlit</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.subheader("📧 Spam Email Classifier")
